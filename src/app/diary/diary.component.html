@@ -1,0 +1,12 @@
+<content>
+    <button>Создать</button>
+    <ul>
+        <li *ngFor="let note of notes" (click)="onSelect(note)">
+            <span class="note_time">{{note.date}}</span>
+            <div class="note-content">
+                <div class="note-content_text">{{note.text}}</div>
+                <img class="note-content_image">  
+            </div>
+        </li>
+    </ul>
+</content>

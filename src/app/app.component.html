@@ -1,22 +1,24 @@
-<h1>My  app is working </h1>
+<!-- <header>
+  <a class="logo"
+     routerLink="/main">
+    {{title}}
+  </a> 
+</header>
+<content>
+  <router-outlet />
+</content>
+ -->
 
-<nav>
-  <a class="button"
-     routerLink="/login"
-     routerLinkActive="activebutton"
-     ariaCurrentWhenActive="page">
-    login page
-  </a> |
-  <a class="button"
-     routerLink="/**"
-     routerLinkActive="activebutton"
-     ariaCurrentWhenActive="page">
-    404
-  </a>
-</nav>
 
-<router-outlet></router-outlet>
-
-<div>
-  <h1>end of app</h1>
-</div>
+<header>
+  <h1>{{title}}</h1>
+</header>
+<content>
+  <app-diary></app-diary>
+</content>
+<footer>
+  <p>
+    Данный проект выполняется в рамках тестового задания от <a href="https://academy.infotecs.ru/">InfoTecs</a>
+     для стажера на позицию <b>Web – разработчик (Angular)</b>.</p>
+  <p>Кандидат: Носарева А.А.</p>
+</footer>

@@ -1,3 +1,35 @@
-h1 {
-    color: magenta
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+    background-color: #DDA15E;
+    padding: 10px 50px;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 250%;
+    font-weight: bold;
+    color: #283618;
+}
+
+content {
+    display: block;
+    min-height: calc(85vh - 60px);
+    height: 100%;
+    padding: 0 50px;
+}
+
+footer {
+    height: 10vh;
+    background-color: #283618;
+    padding: 20px 50px;
+    color: #DDA15E;
+}
+
+footer a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #DDA15E;
 }

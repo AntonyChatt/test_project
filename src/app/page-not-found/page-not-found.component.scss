@@ -1,11 +1,18 @@
 content {
-    background-color: bisque;
+    padding: 24vh 0;
     display: flex;
-    justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 h1 {
-    color: darkblue;
-    font-size: 100px;
+    color: #283618;
+    font-size: 950%;
+}
+
+a {
+    text-decoration: underline;
+    color: #283618;
+    font-size: 200%;
+
 }
