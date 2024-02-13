@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { DiaryComponent } from './diary/diary.component';
+import { NoteComponent } from './note/note.component';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -13,13 +14,14 @@ import { AppRoutingModule } from './app-routing.module';
   declarations: [
     AppComponent,
     //LoginComponent,
-    //PageNotFoundComponent,
-    DiaryComponent
+    PageNotFoundComponent,
+    DiaryComponent,
+    NoteComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    //AppRoutingModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

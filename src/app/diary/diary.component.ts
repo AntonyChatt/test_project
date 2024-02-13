@@ -10,16 +10,11 @@ import { NoteService } from '../note.service';
 })
 export class DiaryComponent implements OnInit{
   notes: Note[] = [];
-  selectedNote?: Note;
 
   constructor(private noteService: NoteService) {}
 
   ngOnInit(): void {    
     this.getNotes();
-  }
-
-  onSelect(note: Note): void {
-    this.selectedNote = note;
   }
 
   getNotes(): void {

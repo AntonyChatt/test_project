@@ -1,4 +1,9 @@
-<div *ngIf="selectedNote">
-    <label for="text">Note text: </label>
-    <input id="text" [(ngModel)]="selectedNote.text" placeholder="text">
+<content>
+  <h1>Создание \ Редактирование заметки</h1>
+  <div class="editor" id="editor-js">{{note?.text}}</div>
+  <div class="action-panel">
+    <button class="action-panel_cancel" (click)="goBack()">Выход</button>
+    <button class="action-panel_cancel">Отменить изменения</button>
+    <button class="action-panel_acept">Сохранить</button>
   </div>
+</content>

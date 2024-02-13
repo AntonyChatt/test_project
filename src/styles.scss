@@ -5,10 +5,26 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+*::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: #FEFAE0;
+    border-radius: 100px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #606C38;
+    border-radius: 100px;
+}
+
 button {
     padding: 10px 30px;
     border: none;
     border-radius: 4px;
     font-size: 150%;
+    box-sizing: border-box;
     cursor: pointer;  
 }
