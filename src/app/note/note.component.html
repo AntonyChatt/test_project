@@ -1,9 +1,12 @@
 <content>
-  <h1>Создание \ Редактирование заметки</h1>
-  <div class="editor" id="editor-js">{{note?.text}}</div>
+  <h1>{{actionTitle}} заметки</h1>
+  <p>
+    <span>Подсказка:</span> Чтобы вставить изображение, скопируйте в текстовое поле ссылку на изображение. Редактор его отобразит.
+  </p>
+  <div class="editor" id="editor-js"></div>
   <div class="action-panel">
     <button class="action-panel_cancel" (click)="goBack()">Выход</button>
-    <button class="action-panel_cancel">Отменить изменения</button>
-    <button class="action-panel_acept">Сохранить</button>
+    <button class="action-panel_cancel" (click)="onClear()">Отменить изменения</button>
+    <button class="action-panel_acept" (click)="onSave()">Сохранить</button>
   </div>
 </content>

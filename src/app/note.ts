@@ -1,6 +1,6 @@
+import { Editor } from "./editor";
+
 export interface Note {
     id: number;
-    date: string;
-    text: string;
-    img: string;
+    editor: Editor
   }

@@ -18,6 +18,14 @@ export class DiaryComponent implements OnInit{
   }
 
   getNotes(): void {
-    this.noteService.getNotes().subscribe(notes => this.notes = notes);
+    this.noteService.getNotes().subscribe(notes => {
+      //sort by time
+      this.notes = notes
+    });
   }
 }
+
+
+//add deletion
+//readonly editor 
+//diff render images

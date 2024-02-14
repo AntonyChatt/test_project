@@ -1,11 +1,11 @@
 <content>
-    <button>Создать</button>
+    <a class="create_button" routerLink="/note/-1">Создать</a>
     <ul>
         <li *ngFor="let note of notes">
             <a routerLink="/note/{{note.id}}">
-                <span class="note_time">{{note.date}}</span>
+                <span class="note_time">{{note.editor.time}}</span>
             <div class="note-content">
-                <div class="note-content_text">{{note.text}}</div>
+                <div class="note-content_text">{{note.editor}}</div>
                 <img class="note-content_image">  
             </div>
             </a>  

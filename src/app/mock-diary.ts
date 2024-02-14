@@ -3,26 +3,66 @@ import { Note } from "./note";
 export const NOTES: Note[] = [
     {
         id: 1,
-        date: '11.02.2024 15:34:45',
-        text: 'Hello world, muy namer  is test!',
-        img: ''
+        editor: {
+            time: 1707904815678,
+            version: "2.29.0",
+            blocks: [
+                {
+                    data: {
+                        text: "rtrtrt"
+                    },
+                    id: "EDGTlDe4JT",
+                    type: "paragraph"
+                },
+            ]
+        }
     },
     {
         id: 2,
-        date: '11.02.2024 17:34:45',
-        text: 'Hello its test',
-        img: ''
+        editor: {
+            time: 1707906699752,
+            version: "2.29.0",
+            blocks: [
+                {
+                    data: {
+                        text: "rtrtrt"
+                    },
+                    id: "EDGTlDe4JT",
+                    type: "paragraph"
+                },
+            ]
+        }
     },
     {
         id: 3,
-        date: '11.02.2024 12:34:45',
-        text: 'Hello world!',
-        img: ''
+        editor: {
+            time: 1707904815678,
+            version: "2.29.0",
+            blocks: [
+                {
+                    data: {
+                        text: "rtrtrt"
+                    },
+                    id: "EDGTlDe4JT",
+                    type: "paragraph"
+                },
+            ]
+        }
     },
     {
         id: 4,
-        date: '11.02.2024 22:34:45',
-        text: 'Hell is test!',
-        img: ''
+        editor: {
+            time: 1707904815678,
+            version: "2.29.0",
+            blocks: [
+                {
+                    data: {
+                        text: "rtrtrt"
+                    },
+                    id: "EDGTlDe4JT",
+                    type: "paragraph"
+                },
+            ]
+        }
     }
 ];
