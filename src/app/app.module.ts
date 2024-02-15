@@ -5,7 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { DiaryComponent } from './diary/diary.component';
 import { NoteComponent } from './note/note.component';
@@ -17,7 +16,6 @@ import { InMemoryDataService } from './in-memory-data.service';
 @NgModule({
   declarations: [
     AppComponent,
-    //LoginComponent,
     PageNotFoundComponent,
     DiaryComponent,
     NoteComponent

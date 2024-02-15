@@ -10,6 +10,13 @@ import { Note } from "../note"
 import { NoteService } from '../note.service';
 import { Editor } from '../editor';
 
+/*
+  This component implements the logic of creating and editing a record
+  If the record is uploaded successfully, the "save" button calls the
+  record update method, otherwise the record is created
+  Also, the "undo changes" button returns the editor state to the
+  original one or clears it.
+*/
 @Component({
   selector: 'app-note',
   templateUrl: './note.component.html',
@@ -83,7 +90,6 @@ export class NoteComponent implements OnInit{
     this.editor.save().then((savedData: Editor) => {
       if (this.isEditing && this.note) {
         this.note.editor = savedData;
-        console.log(this.note)
         this.noteService.updateNote(this.note).subscribe(() => this.goBack());
       }
       else {

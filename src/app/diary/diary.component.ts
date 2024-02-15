@@ -5,6 +5,20 @@ import { Editor, RowDataImage, RowDataText } from '../editor';
 
 import { NoteService } from '../note.service';
 
+/*
+  This component gets a list of notes of the Note type and converts them
+  to the NotePreview type. To display a preview of the recordings, the
+  content is displayed (part of the content is cropped to the size of the
+  output block). If there were pictures in the recording, the first of these
+  pictures is displayed in the side window, otherwise the placeholder text 
+  (alt) is displayed
+
+  Below is a more concise example of displaying via readonly
+  The Editorjs component. However, such an implementation required making 
+  the preview component is separate, which I didn't have enough time
+  for at the moment. TODO it later
+*/
+
 @Component({
   selector: 'app-diary',
   templateUrl: './diary.component.html',
