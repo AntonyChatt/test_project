@@ -59,6 +59,11 @@ export class NoteComponent implements OnInit{
     })
   }
 
+  onDelete(): void {  // Delete note
+    this.note === undefined ? this.goBack() : this.noteService.deleteNote(this.note.id)
+      .subscribe(() => this.goBack())
+  }
+
   goBack(): void {   // Discard changes and go back
     this.location.back();
   }

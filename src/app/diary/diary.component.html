@@ -3,10 +3,14 @@
     <ul>
         <li *ngFor="let note of notes">
             <a routerLink="/note/{{note.id}}">
-                <span class="note_time">{{note.editor.time}}</span>
+                <span class="note_time">{{note.date}}</span>
             <div class="note-content">
-                <div class="note-content_text">{{note.editor}}</div>
-                <img class="note-content_image">  
+                <div class="note-content_text">
+                    <div *ngFor="let row of note.text" class="textbox">
+                        <div [innerHTML]="row" class="textbox-row"></div>
+                    </div>
+                </div>
+                <img class="note-content_image" src="{{note.image}}" alt="Здесь появляется изображение если оно есть в записи">  
             </div>
             </a>  
         </li>

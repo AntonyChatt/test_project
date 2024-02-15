@@ -42,7 +42,14 @@ export class NoteService {
     return this.http.post<Note>(this.notesUrl, note, this.httpOptions).pipe(
       catchError(this.handleError<Note>('addNote'))
     );
-  } 
+  }
+
+  deleteNote(id: Number): Observable<Note> {
+    const url = `${this.notesUrl}/${id}`;
+    return this.http.delete<Note>(url, this.httpOptions).pipe(
+      catchError(this.handleError<Note>('deleteNote'))
+    );
+  }
 
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {

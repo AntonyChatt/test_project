@@ -17,7 +17,7 @@ export interface EditorRow {
 }
 
 export interface Editor {
-    time: Number,
+    time: number,
     blocks: EditorRow[],
     version: string
 }

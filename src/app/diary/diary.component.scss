@@ -42,8 +42,10 @@ li {
 
 a {
     text-decoration: none;
+    color: #BC6C25;
     display: block;
 }
+
 
 .note_time {
     display: block;
@@ -65,14 +67,31 @@ a {
     box-sizing: border-box;
     border: 3px dashed #BC6C25;
     background-color: #FFD991;
-    
+    overflow: hidden;
+}
+
+.textbox {
+    max-width: 650px;
+    margin: auto;
+}
+
+.textbox-row {
+    padding: 7px 0;
+    word-wrap: break-word;
 }
 
 .note-content_image {
     display: block;
     box-sizing: border-box;
-    height: 160px;
-    width: 160px;
+    min-height: 160px;
+    min-width: 160px;
+    max-height: 160px;
+    max-width: 160px;
     border: 3px dashed #BC6C25;
     background-color: #FFD991;
+}
+
+.note-content_image[src=""] {
+    text-align: center;
+    padding: 30px 10px;
 }

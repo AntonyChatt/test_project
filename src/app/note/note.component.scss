@@ -24,8 +24,6 @@ p span {
     overflow: auto;
 }
 
-
-
 .action-panel {
     padding: 20px 0;
     display: flex;
@@ -35,6 +33,20 @@ p span {
 .action-panel button {
     margin-left: 20px;
  }
+
+ .action-panel_delete {
+    background-color: #E29597;
+    color: #BC4749;
+ }
+
+.action-panel_delete:hover {
+    background-color: #BC4749;
+    color: #E29597;
+}
+
+.action-panel_delete:active {
+    background-color: #DB5456;
+}
 
 .action-panel_cancel {
     color: #BC4749;
@@ -48,8 +60,8 @@ p span {
 }
 
 .action-panel_cancel:active {
-    background-color: #E76466;
-    border-color: #E76466;
+    background-color: #E29597;
+    border-color: #E29597;
 }
 
 .action-panel_acept {
